@@ -9,9 +9,9 @@ a.config(background='#42f5f5')
 
 def system():
   
-        Label(a,text=' Registred Sucessfully',bg='blue',fg="white",font=('tims',10,'bold')).place(x=350,y=550)
+        Label(a,text=' Registred Sucessfully',bg='blue',fg="white",font=('times',10,'bold')).place(x=190,y=740)
    
-        messagebox.showerror('Message','Something went wrong')
+        messagebox.infoerror('Message','Registerd sucessfully')
    
 Label(a,text='EMPLOYEE REGISTRATION FORM',bg='white',fg='black',pady=10,font=('times',20,'bold')).place(x=55,y=60)
 Label(a,text='First Name',bg='white',fg="black",font=('times',15)).place(x=63,y=150)
@@ -38,8 +38,8 @@ cb=ttk.Combobox(a,width=20,font=('tims',14))
 cb['values']=('c','c++','Java','Python','PHP','SQL','HTML','CSS','JavaScript','JQuery','React JS','Bootsrap')
 cb.place(x=290,y=500)
 Label(a,text='Enter Email',bg='white',fg='black',font=('times',15)).place(x=63,y=550)
-Entry(a,width=20,font=('tims',15)).place(x=290,y=550)
+Entry(a,width=20,font=('times',15)).place(x=290,y=550)
 Label(a,text='Enter Password',bg='white',fg='black',font=('times',15)).place(x=63,y=600)
-Entry(a,width=20,font=('tims',15)).place(x=290,y=600)
+Entry(a,width=20,font=('times',15)).place(x=290,y=600)
 Button(a,text='Register',bg='white',fg='black',font=('times',15),command=system).place(x=225,y=670)
 a.mainloop()
